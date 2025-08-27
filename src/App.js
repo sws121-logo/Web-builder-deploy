@@ -1,7 +1,7 @@
 import React, { useState, createContext, useContext, useEffect } from 'react';
 import { DndProvider, useDrag, useDrop } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import { ArrowUp, ArrowDown, Trash2, PlusCircle, ShoppingCart, User, Search, Menu, X, Image as ImageIcon, Type, Code, Layout } from 'lucide-react';
+import { ArrowUp, ArrowDown, Trash2, PlusCircle, ShoppingCart, User, Search, X, Image as ImageIcon, Type, Layout } from 'lucide-react';
 
 // --- MOCK DATA FOR TEMPLATES ---
 const templates = [
