@@ -1,0 +1,17 @@
+# Netlify configuration file
+
+[build]
+  # This command is run to build the site.
+  command = "npm run build"
+  
+  # This is the directory that Netlify will deploy.
+  # It should match the build output directory of your build command.
+  publish = "build"
+
+# This rule is crucial for single-page applications (SPAs).
+# It ensures that any request that doesn't match a file on the server
+# is redirected to index.html, allowing React to handle the routing.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
